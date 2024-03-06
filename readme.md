@@ -1,4 +1,4 @@
-#aws-serverless-express
+# aws-serverless-express
 
 ### Common Command
 1. npx sequelize init 
