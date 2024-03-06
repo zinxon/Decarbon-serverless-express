@@ -1,0 +1,35 @@
+{
+  "name": "decarbonLambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.699.0",
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dynamodb-geo": "^0.4.0",
+    "express": "^4.15.2",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-formidable": "^1.2.0",
+    "helmet": "^3.23.3",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.2.0",
+    "sequelize-cli": "^6.0.0",
+    "short-uuid": "^3.1.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

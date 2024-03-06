@@ -1,0 +1,25 @@
+image: node:10.15.0
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build and package
+          script:
+            - apt-get update && apt-get install -y zip
+            - yarn install
+            - zip -r aws-serverless-express.zip *
+          artifacts:
+            - aws-serverless-express.zip
+      - step:
+          name: Update Lambda code to production
+          deployment: production
+          trigger: manual
+          script:
+            - pipe: atlassian/aws-lambda-deploy:0.2.1
+              variables:
+                AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                AWS_DEFAULT_REGION: "us-east-2"
+                FUNCTION_NAME: "decarbonLambda-dev"
+                COMMAND: "update"
+                ZIP_FILE: "aws-serverless-express.zip"

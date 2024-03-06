@@ -1,0 +1,65 @@
+{
+  "development": {
+    "username": "decarbonadmin",
+    "password": "5KS[xp[[Jnv:-}:G",
+    "database": "database_development",
+    "host": "3.128.143.54",
+    "port": "3306",
+    "dialect": "mysql",
+    "logging": false,
+    "pool": {
+        "max": 5,
+        "min": 0,
+        "idle": 20000,
+        "handleDisconnects": true
+    },
+    "dialectOptions": {
+        "requestTimeout": 100000
+    },
+    "define": {
+        "freezeTableName": true
+    }
+  },
+  "test": {
+    "username": "decarbonadmin",
+    "password": "5KS[xp[[Jnv:-}:G",
+    "database": "database_test",
+    "host": "3.128.143.54",
+    "port": "3306",
+    "dialect": "mysql",
+    "logging": false,
+    "pool": {
+        "max": 5,
+        "min": 0,
+        "idle": 20000,
+        "handleDisconnects": true
+    },
+    "dialectOptions": {
+        "requestTimeout": 100000
+    },
+    "define": {
+        "freezeTableName": true
+    }
+  },
+  "production": {
+    "username": "decarbonadmin",
+    "password": "5KS[xp[[Jnv:-}:G",
+    "database": "database_production",
+    "host": "3.128.143.54",
+    "port": "3306",
+    "dialect": "mysql",
+    "logging": false,
+    "pool": {
+        "max": 5,
+        "min": 0,
+        "idle": 20000,
+        "handleDisconnects": true
+    },
+    "dialectOptions": {
+        "requestTimeout": 100000
+    },
+    "define": {
+        "freezeTableName": true
+    }
+  }
+}

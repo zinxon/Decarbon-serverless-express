@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  decarbonLambdadev:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: decarbonLambda-dev
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: 'arn:aws:iam::458173426614:role/awsamplifyvueLambdaRolec5a7798e-dev'
+      Runtime: nodejs12.x
+      Timeout: 25
