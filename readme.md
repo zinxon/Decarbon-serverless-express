@@ -3,6 +3,6 @@
 ### Common Command
 1. npx sequelize init 
 
-###TODO
+### TODO
 1. yarn install
 2. yarn start-test
