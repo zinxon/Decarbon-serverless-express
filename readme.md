@@ -10,6 +10,8 @@ This project is a serverless Express.js API built for AWS, designed to handle me
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [API Endpoints](#api-endpoints)
+  - [Database](#database)
 
 ## Features
 
@@ -53,3 +55,32 @@ This project is a serverless Express.js API built for AWS, designed to handle me
 ## Usage
 
 To start the application locally:
+
+yarn start-test
+
+For deployment to AWS Lambda, follow AWS Serverless Express deployment guidelines.
+
+## API Endpoints
+
+The API includes various endpoints for merchant and user operations. Some key endpoints include:
+
+- `/merchant/createMerchant`: Create a new merchant
+- `/merchant/getMerchantProfile`: Get merchant profile
+- `/merchant/createStore`: Create a new store
+- `/merchant/createActivity`: Create a new activity
+- `/merchant/createCoupon`: Create a new coupon
+- `/user/addCoins`: Add coins to a user's account
+
+For a complete list of endpoints, refer to the `routes/merchant.js` and `routes/user.js` files.
+
+## Database
+
+This project uses Sequelize ORM with the following models:
+
+- Merchant
+- Store
+- Activity
+- Coupon
+- User
+- Favorite
+- Record
